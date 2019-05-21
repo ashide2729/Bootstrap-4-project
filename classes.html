@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <title>Bootstrap design</title>
+</head>
+<body>
+    <div class="top-bar"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo.jpg" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Classes
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="classes.html">Web</a>
+                <a class="dropdown-item" href="classes.html">Programming</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="classes.html">Teach</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <li class="but" data-toggle="modal" data-target="#loginModal"><a href="#">Login</a></li>
+            <li class="but" data-toggle="modal" data-target="#registerModal"><a href="#">Register</a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember me</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="registerModalLabel">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="First name">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Last name">
+                  </div>
+                </div>
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Re-enter Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row mt-2">
+            <div class="col-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Web Front end</a>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Python</a>
+                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Java</a>
+                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Data Science</a>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, culpa optio voluptate provident repellendus modi cum deleniti voluptatum beatae aliquid. Facilis similique veniam illo, dolor tempora ullam impedit libero sunt, nulla nam earum maxime accusamus architecto? Iure, et consequuntur eos odio blanditiis enim amet tenetur aspernatur voluptatem odit soluta, repellat debitis eaque.</div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque minima fuga aperiam quisquam ut, doloribus repellat laudantium illum a laboriosam voluptas soluta omnis est, molestiae exercitationem? Corrupti sint quo harum iusto vitae eaque, consequuntur, ex culpa reprehenderit soluta molestias. Cumque doloremque esse velit pariatur consequuntur numquam totam perspiciatis delectus facilis necessitatibus, aliquid ad dolore sed laborum nostrum et minus ipsam, eveniet quidem. Ab, veniam? Voluptatem reiciendis iusto, ratione laborum numquam dolorem nemo quia laudantium! Aspernatur eius eveniet repellat ratione enim animi quis atque libero, quos incidunt, fuga delectus, debitis accusantium quia obcaecati itaque repudiandae quidem nesciunt assumenda ea. Sed, repellendus. dolor sit amet consectetur adipisicing elit. Facilis similique veniam illo, dolor tempora ullam impedit libero sunt, nulla nam earum maxime accusamus architecto? Iure, et consequuntur eos odio blanditiis enim amet tenetur aspernatur voluptatem odit soluta, repellat debitis eaque.</div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis similique veniam illo, dolor tempora ullam impedit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quidem eveniet quis quaerat laborum? Nulla quo velit laudantium, voluptate esse explicabo exercitationem deserunt adipisci. Minima consectetur quae consequuntur necessitatibus voluptatibus incidunt quaerat eaque delectus deleniti facilis? Vel maxime eos quae ducimus architecto laboriosam omnis debitis alias quos quibusdam corporis, optio aliquid vero rem asperiores est obcaecati animi temporibus minima amet! libero sunt, nulla nam earum maxime accusamus architecto? Iure, et consequuntur eos odio blanditiis enim amet tenetur aspernatur voluptatem odit soluta, repellat debitis eaque.</div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis similique veniam illo, dolor tempora ullam impedit libero sunt, nulla nam earum maxime accusamus architecto? Iure, et consequuntur eos odio blanditiis enim amet tenetur aspernatur voluptatem odit soluta, repellat debitis Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et aliquam, quidem laborum aspernatur quaerat soluta accusantium veritatis quae facilis reprehenderit cum ipsum accusamus mollitia! Earum totam accusantium dolorem quasi hic saepe animi ducimus atque perspiciatis eos aliquam quos deserunt sint minus quo eaque aperiam, blanditiis eum mollitia cumque similique, maxime quidem quibusdam ut? Ducimus cumque omnis vel veniam incidunt, minima nostrum dolorum nisi inventore beatae modi nulla, perferendis asperiores quam? Molestiae ipsa modi ipsum incidunt optio minus quis minima. eaque.</div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nobis consequatur beatae alias porro blanditiis corrupti. Deserunt sunt harum tenetur odio! Neque quis illo porro consectetur maxime obcaecati unde vitae quas qui laudantium eligendi laboriosam, possimus voluptates ullam voluptas quaerat fugiat magnam hic! Exercitationem quam suscipit quis, eius dolorum in blanditiis. Sapiente quibusdam cumque earum saepe provident nemo corrupti rerum quo ipsa! Officiis cupiditate asperiores a? Reiciendis, voluptatem tenetur? Nesciunt et veniam totam aliquid quae esse aspernatur molestias, quibusdam qui quis maiores reprehenderit ut odit dolorem aperiam quidem asperiores laudantium? Similique rerum, ut deleniti reprehenderit sit blanditiis mollitia molestias voluptate.</div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nobis consequatur beatae alias porro blanditiis corrupti. Deserunt sunt harum tenetur odio! Neque quis illo porro consectetur maxime obcaecati unde vitae quas qui laudantium eligendi laboriosam, possimus voluptates ullam voluptas quaerat fugiat magnam hic! Exercitationem quam suscipit quis, eius dolorum in blanditiis. Sapiente quibusdam cumque earum saepe provident nemo corrupti rerum quo ipsa! Officiis cupiditate asperiores a? Reiciendis, voluptatem tenetur? Nesciunt et veniam totam aliquid quae esse aspernatur molestias, quibusdam qui quis maiores reprehenderit ut odit dolorem aperiam quidem asperiores laudantium? Similique rerum, ut deleniti reprehenderit sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit expedita facilis commodi error quod asperiores saepe voluptas soluta reprehenderit ipsam molestiae repellat non enim sunt sit maiores odio necessitatibus doloremque quidem, illo cum! Repudiandae aperiam minima tenetur, atque odit explicabo! blanditiis mollitia molestias voluptate.</div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Lorem ipsum dolor Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam porro rem assumenda unde? Harum ut eveniet sit quibusdam, debitis ex quae magnam eligendi inventore distinctio saepe sequi officia cumque vitae molestias possimus pariatur enim laudantium quos nulla minus nostrum beatae recusandae. Totam necessitatibus saepe natus cupiditate sit, molestias ad quod reprehenderit quidem rem odio quaerat eaque! Quia delectus suscipit nemo! sit, amet consectetur adipisicing elit. Aliquam nobis consequatur beatae alias porro blanditiis corrupti. Deserunt sunt harum tenetur odio! Neque quis illo porro consectetur maxime obcaecati unde vitae quas qui laudantium eligendi laboriosam, possimus voluptates ullam voluptas quaerat fugiat magnam hic! Exercitationem quam suscipit quis, eius dolorum in blanditiis. Sapiente quibusdam cumque earum saepe provident nemo corrupti rerum quo ipsa! Officiis cupiditate asperiores a? Reiciendis, voluptatem tenetur? Nesciunt et veniam totam aliquid quae esse aspernatur molestias, quibusdam qui quis maiores reprehenderit ut odit dolorem aperiam quidem asperiores laudantium? Similique rerum, ut deleniti reprehenderit sit blanditiis mollitia molestias voluptate.</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+      Copyright &copy 2019 Creator, All rights reserved.
+    </footer>
+</body>
+</html>

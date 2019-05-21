@@ -1,0 +1,59 @@
+img{
+    width: 100px;
+}
+
+.top-bar{
+    height: 5px;
+    background-color: rgb(146, 243, 146);
+}
+
+.but{
+    margin: 5px;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(146, 243, 146);
+}
+
+.jumbotron{
+    margin-top: 0;
+    background: url(img/jumbotron.jpg) center;
+}
+
+.boxes{
+    margin: 10px;
+    margin-top: 0px;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    
+}
+
+.boxes a{
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    background: rgb(117, 112, 112);
+}
+
+.boxes a:hover{
+    color: black;
+    background: white;
+}
+
+.boxes:nth-child(even){
+    background-color: rgb(46, 148, 231);
+}
+
+.boxes:nth-child(odd){
+    background-color: blueviolet;
+}
+
+footer{
+    text-align: center;
+    background-color: grey;
+    margin-top: 5px;
+    padding: 10px;
+    font-weight: 100;
+}
